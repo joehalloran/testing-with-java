@@ -48,4 +48,9 @@ public class FactorialTest {
 
         assertEquals(expectedResult, factorial.calculate(testStartValue));
     }
+
+    @Test(expected=IllegalArgumentException.class)
+    public void calculate_negative() {
+        factorial.calculate(-5);
+    }
 }
