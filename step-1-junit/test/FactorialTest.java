@@ -37,4 +37,13 @@ public class FactorialTest {
 
         assertEquals(expectedResult, factorial.calculate(testStartValue));
     }
+
+    @Test
+    public void calculate_4() {
+        Factorial factorial = new Factorial();
+        int testStartValue = 4;
+        int expectedResult = 24;
+
+        assertEquals(expectedResult, factorial.calculate(testStartValue));
+    }
 }
